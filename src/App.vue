@@ -1,31 +1,23 @@
 <template>
   <div>
-    <h1 ref="title" v-text="msg"></h1>
-    <button ref="btn" @click="showDom">点我输出上方的DOM元素</button>
-    <School ref="sch" />
+    <Student name="李四" sex="女" :age="18" />
+    <hr />
+    <Student name="王老五" sex="男" :age="19" />
+    <hr />
+    <Student name="张三" sex="男" />
   </div>
 </template>
 
 <script>
-// 引入School组件
-import School from './components/School.vue'
-
+import Student from './components/Student.vue'
 export default {
   name: 'App',
   components: {
-    School
+    Student
   },
   data() {
-    return {
-      msg: '欢迎学习Vue'
-    }
+    return {}
   },
-  methods: {
-    showDom() {
-      console.log(this.$refs.title) // 真实DOM元素
-      console.log(this.$refs.btn) // 真实DOM元素
-      console.log(this.$refs.sch) // S
-    }
-  }
+  methods: {}
 }
 </script>
