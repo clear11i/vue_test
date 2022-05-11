@@ -24,7 +24,7 @@ export default {
     showDom() {
       console.log(this.$refs.title) // 真实DOM元素
       console.log(this.$refs.btn) // 真实DOM元素
-      console.log(this.$refs.sch) // S
+      console.log(this.$refs.sch) // School组件的实例对象（VC）
     }
   }
 }
